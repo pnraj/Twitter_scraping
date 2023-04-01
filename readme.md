@@ -106,10 +106,7 @@ else:
     # Button in horizontal order
     b2 , b3, b4 = st.columns([43,40,30]) 
     # GUI-Button2  - To upload the data to mongoDB database
-    if df.empty:
-        pass
-    else:
-        if b2.button("Upload to MongoDB"):
+    if b2.button("Upload to MongoDB"):
             try:
                 col.delete_many({})
                 col.insert_one(scr_data)
