@@ -22,7 +22,7 @@ and which can be uploaded into **MongoDB** database and downloaded
 as a **CSV**,**JSON** file.For full details visit Project Repository""")
 
 #Project Repository link
-st.sidebar.header("Project Repository:[Twitter Scraping](https://github.com/pnraj/Data-Engineering/tree/main/Web_Scraping/Twitter_scraping)")
+st.sidebar.header("Project Repository:[Twitter Scraping](https://github.com/pnraj/Twitter_scraping)")
 
 # sidebar
 st.sidebar.header("**:green[:point_down: Let's Begin Twitter Scraping]:point_down:**")
