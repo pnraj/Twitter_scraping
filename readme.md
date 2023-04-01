@@ -15,7 +15,7 @@ This project aims to scrape Twitter data using the snscrape library, store it in
 A demo video of the working model is available on LinkedIn.
 <p align="center">
   <a href="https://www.youtube.com/watch?v=StTqXEQ2l-Y">
-    <img src="tweets.png" width="640" height="360">
+    <img src="./tweets.png" width="640" height="360">
   </a>
   <br>
   <em>Click to watch the video</em>
@@ -101,13 +101,10 @@ else:
     # Automatically load the DataFrame in Tabular Format
     st.success(f"**:green[{Hashtag} tweets]:thumbsup:**")
     st.write(df)
-
-
     st.write("**:green[Choose Any options from below]**")
-
+    
+    # Button in horizontal order
     b2 , b3, b4 = st.columns([43,40,30]) 
-
-
     # GUI-Button2  - To upload the data to mongoDB database
     if df.empty:
         pass
@@ -121,10 +118,7 @@ else:
                 b2.error('Please try again after Submiting the Hashtag or keyword') 
 
     # GUI-Button3 - To download data as CSV
-    if df.empty:
-        pass
-    else:
-        if b3.download_button(label= "Download CSV",
+    if b3.download_button(label= "Download CSV",
                             data= csv,
                             file_name= f'{Hashtag}_tweets.csv',
                             mime= 'text/csv'
@@ -133,16 +127,14 @@ else:
 
 
     # GUI-Button4 - To download data as JSON
-    if df.empty:
-        pass
-    else:
-        if b4.download_button(label= "Download JSON",
+    if b4.download_button(label= "Download JSON",
                         data= json,
                         file_name= f'{Hashtag}_tweets.json',
                         mime= 'text/csv'
                         ):
             b4.success('JSON Downloaded Successfully:thumbsup:')
 ```
+### To run the app, Navigate to the folder which app is present using CLI and run the command
 ``` py
 streamlit run tweets.py
 ```
