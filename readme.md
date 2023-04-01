@@ -132,7 +132,7 @@ else:
                 b3.success('CSV Downloaded Successfully:thumbsup:')
 
 
-    # BUTTON - To download data as JSON
+    # GUI-Button4 - To download data as JSON
     if df.empty:
         pass
     else:
