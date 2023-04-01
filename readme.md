@@ -2,7 +2,7 @@
 # Twitter Scraping 
 This project aims to scrape Twitter data using the snscrape library, store it in **MongoDB**, and display the scraped data in a GUI built with **Streamlit**. The user can enter a **keyword or hashtag** to search, select a date range, and limit the number of tweets to scrape. The scraped data is displayed in the GUI and can be uploaded to the database, downloaded as a **CSV** or **JSON** file.
 
-### Requirements
+### All the tools used in this project
 - __[Python 3](https://docs.python.org/)__
 - __[Snscrape](https://github.com/JustAnotherArchivist/snscrape)__
 - __[Pymongo](https://pymongo.readthedocs.io/)__
@@ -22,6 +22,8 @@ A demo video of the working model is available on LinkedIn.
 </p>
 https://img.youtube.com/vi/<insert-youtube-video-id-here>/0.jpg image of youtube videos
 
+## Workflow
+
 + Step 0 `pip install snscrape pandas streamlit datetime pymongo`
 + Step 1 `Importing needed libraries`
 ``` py
@@ -32,6 +34,7 @@ import streamlit as st
 import pymongo
 ```
 + Step 2 `Getting input from user on streamlit sidebar`
+
 ``` py
 # Keyword/hastags, tweet count and date range(start and end)
 Hashtag = st.sidebar.text_input("Enter the Hashtag or Keyword of Tweets : ")
@@ -140,7 +143,9 @@ else:
                         ):
             b4.success('JSON Downloaded Successfully:thumbsup:')
 ```
-  
+``` py
+streamlit run tweets.py
+```
 ### Future Improvements
 - Expand the project to scrape data from other social media platforms
 - Add authentication to the GUI to ensure data privacy
