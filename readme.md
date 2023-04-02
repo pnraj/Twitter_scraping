@@ -12,7 +12,7 @@ This project aims to scrape Twitter data using the snscrape library, store it in
 - __[Datetime](https://docs.python.org/3/library/datetime.html)__
 
 ### Demo
-A demo video of the working model is available on LinkedIn.
+A demo video of the working model is available on Youtube and Linkedin.
 <p align="center">
   <a href="https://youtu.be/vUIRxwxNyT4">
     <img src="https://user-images.githubusercontent.com/29162796/229349835-6f17cf12-06d8-4a32-bb63-4bab36ca5a75.png" width="640" height="360">
