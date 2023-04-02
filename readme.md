@@ -14,13 +14,12 @@ This project aims to scrape Twitter data using the snscrape library, store it in
 ### Demo
 A demo video of the working model is available on LinkedIn.
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=StTqXEQ2l-Y">
-    <img src="./tweets.png" width="640" height="360">
+  <a href="https://youtu.be/vUIRxwxNyT4">
+    <img src="https://user-images.githubusercontent.com/29162796/229349835-6f17cf12-06d8-4a32-bb63-4bab36ca5a75.png" width="640" height="360">
   </a>
   <br>
   <em>Click to watch the video</em>
 </p>
-https://img.youtube.com/vi/<insert-youtube-video-id-here>/0.jpg image of youtube videos
 
 ## Workflow
 
