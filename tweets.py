@@ -118,6 +118,3 @@ else:
                         ):
             b4.success('JSON Downloaded Successfully:thumbsup:')
 
-        
-if __name__ == "__main__":
-    main()
